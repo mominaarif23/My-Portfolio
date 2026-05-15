@@ -1,0 +1,103 @@
+.nav-wrapper {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 92%;
+  max-width: 820px;
+}
+
+.doodle-nav {
+  background: var(--card-bg);
+  border: 3.5px solid var(--doodle-black);
+  border-radius: 50px 18px 45px 18px / 18px 45px 18px 45px;
+  padding: 0.55rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 6px 6px 0px 0px var(--doodle-black);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--doodle-black);
+  font-weight: 900;
+  font-size: 1.3rem;
+  position: relative;
+  font-family: var(--font-accent);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover { color: var(--accent-color); }
+.nav-link:hover::after { width: 100%; }
+
+.theme-toggle {
+  width: 58px;
+  height: 29px;
+  background: var(--card-bg);
+  border: 3px solid var(--doodle-black);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.toggle-pill {
+  width: 23px;
+  height: 23px;
+  background: var(--card-bg);
+  border: 2.5px solid var(--doodle-black);
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+[data-theme='mint'] .toggle-pill {
+  transform: translateX(29px);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0.4rem;
+  font-size: 1.4rem;
+  color: var(--doodle-black);
+  border-radius: 0;
+}
+
+.mobile-menu-btn::before {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+  .mobile-menu-btn { display: block; }
+}

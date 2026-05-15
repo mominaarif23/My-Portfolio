@@ -1,0 +1,89 @@
+.cert-section {
+  /* Inherits from .doodle-box */
+}
+
+.cert-tape {
+  left: 20%;
+  transform: translateX(-50%) rotate(2deg);
+}
+
+.cert-header-row {
+  margin-bottom: 2rem;
+}
+
+.cert-title {
+  font-size: 2.4rem;
+  font-family: var(--font-accent);
+  font-weight: 700;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.cert-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Sub-card with solid shadow overlay */
+.cert-sub-card {
+  background: var(--white);
+  border: 3.5px solid var(--doodle-black);
+  border-radius: 8px 12px 6px 10px;
+  padding: 1.5rem;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 4px 4px 0px 0px var(--shadow-color);
+}
+
+.cert-card-link:hover .cert-sub-card {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px var(--accent-color);
+}
+
+.cert-pin {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: var(--card-bg);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.cert-name {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: var(--font-accent);
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  line-height: 1.2;
+}
+
+.cert-issuer {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2.5px dashed var(--doodle-black);
+  padding-top: 0.8rem;
+  font-family: var(--font-accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cert-view {
+  color: var(--accent-color);
+}

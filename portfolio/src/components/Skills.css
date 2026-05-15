@@ -1,0 +1,46 @@
+.skill-chip {
+  padding: 0.4rem 1rem;
+  border: 3px solid var(--doodle-black);
+  border-radius: 12px 4px 10px 3px;
+  background: var(--white);
+  font-size: 1rem;
+  display: inline-block;
+  font-family: var(--font-handwriting);
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skill-chip::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: -3px;
+  bottom: -3px;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--doodle-black) 0,
+    var(--doodle-black) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+  opacity: 0.25;
+  border-radius: inherit;
+  transition: all 0.2s ease;
+}
+
+.skill-chip:hover::before {
+  opacity: 0.4;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--accent-color) 0,
+    var(--accent-color) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}

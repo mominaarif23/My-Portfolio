@@ -1,0 +1,6 @@
+portfolio/node_modules
+portfolio/dist
+.DS_Store
+*.local
+node_modules
+dist

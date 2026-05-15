@@ -1,0 +1,78 @@
+{
+  "personal": {
+    "name": "Momina Arif",
+    "tagline": "Software Engineer | UI/UX Designer | AI Enthusiast",
+    "email": "arifmomina23@gmail.com",
+    "phone": "+92 314 0044533",
+    "github": "https://github.com/mominaarif23",
+    "linkedin": "https://www.linkedin.com/in/momina-arif-853569370/",
+    "location": "Lahore, Pakistan"
+  },
+  "about": {
+    "bio": "I am a Software Engineering student at Punjab Tianjin University of Technology, Lahore, with a passion for UI/UX design, AI/ML, and building innovative software solutions. I recently completed an AI internship at NUST, where I explored the intersection of artificial intelligence and practical technology. I love combining my technical skills with my creative side—especially in Art and Crafts and Web Design.",
+    "objective": "To secure a software engineering internship where I can apply my skills, learn from professionals and contribute to innovative projects."
+  },
+  "education": [
+    {
+      "school": "Punjab Tianjin University of Technology, Lahore",
+      "degree": "B.Sc. (Hons.) Software Engineering",
+      "period": "2024 - 2028",
+      "details": "GPA 3.14/4.00"
+    },
+    {
+      "school": "Govt. Degree College for Women, Abdul Hakeem",
+      "degree": "ICS (Physics)",
+      "period": "2022 - 2024",
+      "details": "Marks 858/1200"
+    },
+    {
+      "school": "Govt. Girls Higher Secondary School, Abdul Hakeem",
+      "degree": "Matriculation (Science)",
+      "period": "2020 - 2022",
+      "details": "Marks 884/1100"
+    }
+  ],
+  "experience": [
+    {
+      "role": "AI Intern",
+      "company": "SPS NSTP, National University of Science and Technology (NUST)",
+      "location": "Islamabad, Pakistan",
+      "period": "Summer 2025",
+      "description": "Worked on AI/ML projects and explored the practical applications of prompt engineering and automation."
+    }
+  ],
+  "skills": {
+    "Technical": [
+      "React (Basic)",
+      "JavaScript",
+      "HTML/CSS",
+      "C#",
+      "MySQL/MongoDB",
+      "Prompt Engineering",
+      "Version Control (Git)"
+    ],
+    "Design": [
+      "UI/UX Design (Figma)",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Web Designing",
+      "Graphics Design (Canva)",
+      "Prototyping",
+      "Mockup Design"
+    ],
+    "Soft Skills": [
+      "Communication",
+      "Time Management",
+      "Teamwork"
+    ]
+  },
+  "certifications": [],
+  "interests": [
+    "DevOps",
+    "AI/ML & DL",
+    "n8n Automation",
+    "Vibe coding",
+    "Photography",
+    "Art and Crafts"
+  ]
+}
