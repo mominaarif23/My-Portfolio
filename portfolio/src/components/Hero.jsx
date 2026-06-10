@@ -71,7 +71,7 @@ const Hero = ({ personal }) => {
         )}
 
         <img 
-          src="/avatar.jpeg" 
+          src={`${import.meta.env.BASE_URL}avatar.jpeg`} 
           alt="Momina" 
           onLoad={() => setImgLoaded(true)}
           onError={() => setImgError(true)}
