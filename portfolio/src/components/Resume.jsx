@@ -43,7 +43,7 @@ const Resume = () => {
       }}>
         <div style={{ position: 'relative' }}>
           <img 
-            src="/avatar.jpeg" 
+            src={`${import.meta.env.BASE_URL}avatar.jpeg`} 
             alt={personal.name} 
             style={{
               width: '150px',
