@@ -1,0 +1,5 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Doodle Flower 🌸 -->
+  <circle cx="32" cy="32" r="8" fill="#FFD700" stroke="black" stroke-width="2" />
+  <path d="M32 24 Q 40 10 48 24 T 32 32 M32 24 Q 24 10 16 24 T 32 32 M40 32 Q 54 24 54 32 T 40 40 M24 32 Q 10 24 10 32 T 24 40 M32 40 Q 40 54 48 40 T 32 32 M32 40 Q 24 54 16 40 T 32 32" fill="#FFC1CC" stroke="black" stroke-width="2" stroke-linejoin="round" />
+</svg>
