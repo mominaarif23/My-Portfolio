@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PinDoodle, HeartDoodle, TinySparkle, SmallFlowerDoodle } from './DoodleIcons';
 
 const Hero = ({ personal }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
   return (
     <motion.section
       id="hero"
@@ -42,17 +45,44 @@ const Hero = ({ personal }) => {
         style={{ position: 'absolute', bottom: '1.2rem', right: '1.5rem' }}
       />
 
-      <div style={{ position: 'relative', display: 'inline-block', marginBottom: '1.5rem' }}>
+      <div style={{ position: 'relative', display: 'inline-block', marginBottom: '1.5rem', width: '180px', height: '180px' }}>
+        {/* Loading State */}
+        {!imgLoaded && !imgError && (
+          <div style={{
+            width: '180px', height: '180px', borderRadius: '50%',
+            backgroundColor: 'var(--white)', border: '4px dashed var(--doodle-black)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
+          }}>
+            <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 2, ease: "linear" }}>
+              <TinySparkle size={30} color="var(--doodle-black)" />
+            </motion.div>
+          </div>
+        )}
+
+        {/* Error/Fallback State */}
+        {imgError && (
+          <div style={{
+            width: '180px', height: '180px', borderRadius: '50%',
+            backgroundColor: 'var(--white)', border: '4px solid var(--doodle-black)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
+          }}>
+            <HeartDoodle size={40} color="var(--doodle-black)" />
+          </div>
+        )}
+
         <img 
           src="/avatar.jpeg" 
           alt="Momina" 
+          onLoad={() => setImgLoaded(true)}
+          onError={() => setImgError(true)}
           style={{
             width: '180px',
             height: '180px',
             objectFit: 'cover',
             borderRadius: '50%',
             border: '4px solid var(--doodle-black)',
-            backgroundColor: 'var(--white)'
+            backgroundColor: 'var(--white)',
+            display: imgLoaded && !imgError ? 'block' : 'none'
           }} 
         />
         {/* Doodle decorations for the avatar */}
